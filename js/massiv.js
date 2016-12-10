@@ -44,7 +44,7 @@ difArr.splice(3);
 console.log(difArr);
 
 userId = [2, 4, 6, 5, 6, 8, 8, 3]
-userId.splice(2, 4);
+userId.splice(2, 4);   // (what, where)
 console.log(userId);
 
 userId = [2, 4, 6, 5, 6, 8, 8, 3]

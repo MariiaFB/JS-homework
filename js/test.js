@@ -73,7 +73,7 @@ console.log(5 > 9);
 console.log('asgfh' > 'ss');
 console.log(0 == false);
 
-// strict equality ===
+// strict equality ===  не преобразует к типу
 console.log(0 === false);
 console.log('' === false);
 

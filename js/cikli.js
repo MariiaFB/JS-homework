@@ -1,5 +1,5 @@
-'use strict';
-
+'use strict'; // it is new standart for browers work
+ 
 console.log('Cikli');
 
 // cicle with preconditions
@@ -26,7 +26,7 @@ while (pictures);
 var tarelki = 9;
 var fairy = 40;
 
-while(tarelki > 0 && fairy > 0){
+while(tarelki > 0 && fairy > 0){ // if true in ()
     tarelki--;
     fairy -= 0.5;
     console.log('Fairy' + fairy);
