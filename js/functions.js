@@ -48,7 +48,7 @@ function calc(a, b, operator){
       }else{
         return;
     }
-                            // return is endefined bydefault and STOPS the function    
+                            // return is undefined by default and STOPS the function    
 }
 // function calcAction(operator){
 
