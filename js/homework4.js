@@ -63,7 +63,8 @@ function city(name, population, mayor) {
         population : 8000,
         mayor : 'one', 
         addPopulation : function(people){
-            return this.population = city2.population - people + this.population;
+            city1.population = city2.population - people + city1.population;
+            city2.population = city2.population - people;
         },
     };
 
@@ -74,20 +75,9 @@ function city(name, population, mayor) {
     console.log(city1, city2); 
 
     function  enterCity(enterCity){
-        if(enterCity == city1.name){
-            console.log('name: ' + city1.name); 
-            console.log('population: ' + city1.population); 
-            console.log('mayor: ' + city1.mayor); 
-        }else if( enterCity == city2.name){
-            console.log('name: ' + city2.name); 
-            console.log('population: ' + city2.population); 
-            console.log('mayor: ' + city2.mayor); 
-        }else{
-            console.log("Нет информации о таком городе"); 
-        }
+       console.log('Mayor of city: ' + enterCity.mayor); 
     }
-
-enterCity('London');
+   enterCity(city1);
 
 var president = {
     changeMayor : function(newMayor){
@@ -120,17 +110,18 @@ console.log('Задача 3.---------------------------------------------');
 //         в случае согласия возвращает true,
 //         в случае отказа возвращает false 
 
-function useCalculator(agreement){
-    if (agreement == true){
+function useCalculator(){
+    var answer = confirm('Use calculator?');
+    if (answer){
         return true;
     }else{
         return false;
     }
-
 }
 
-function getDataFromUser(){
-    
+    function getDataFromUser(){
+        var variables;
+   return; 
 }
 
 function operations(a, operator, b){
@@ -139,10 +130,14 @@ function operations(a, operator, b){
     return result;
 };
 
-function runCalculator(agreement){
+function runCalculator(){
     'use strict';
-    if(useCalculator(agreement)){
-        getDataFromUser();
+    if(useCalculator){
+        var res = [];
+        res = getDataFromUser();
+        var a = res[0];
+        var operator = res[1];
+        var b = res[2];
         operations(a, operator, b);
     }else{
         console.log('Программа будет закрыта!');
