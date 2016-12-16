@@ -119,7 +119,7 @@ function useCalculator(){
     }
 }
 
-    function getDataFromUser(){
+function getDataFromUser(){
         var variables;
    return; 
 }
@@ -133,19 +133,19 @@ function operations(a, operator, b){
 function runCalculator(){
     'use strict';
     if(useCalculator){
-        var res = [];
-        res = getDataFromUser();
+        var res = getDataFromUser();
         var a = res[0];
         var operator = res[1];
         var b = res[2];
-        operations(a, operator, b);
+        var result = operations(a, operator, b);
+        alert('Result: ' + result);
+        return;
     }else{
-        console.log('Программа будет закрыта!');
+        alert('Программа будет закрыта!');
         return;
     }
 
 }
-
 
 runCalculator(true);
 
