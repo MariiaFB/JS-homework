@@ -119,17 +119,6 @@ function useCalculator(){
     }
 }
 
-function getDataFromUser(){
-        var variables;
-   return; 
-}
-
-function operations(a, operator, b){
-    var result; 
-    // result = calculation with a, operator and b
-    return result;
-};
-
 function runCalculator(){
     'use strict';
     if(useCalculator){
