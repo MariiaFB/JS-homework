@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'HIGHSPEED';
+    src: url('fonts/HIGHSPEED.eot');
+    src: local('☺'), url('fonts/HIGHSPEED.woff') format('woff'), url('fonts/HIGHSPEED.ttf') format('truetype'), url('fonts/HIGHSPEED.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    font-family: Verdana, Arial;
+    height: 100%;
+}
+
+.scoreboard {
+    color: #b2ff59;
+    background: #000;
+    border: 5px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.scoreboard > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.scoreboard .score {
+    border: 5px solid;
+    border-top: none;
+    display: flex;
+    flex-grow: 1;
+    font-family: 'HIGHSPEED', Sans-Serif;
+    font-size: 600%;
+    padding: 10px;
+}
+
+.scoreboard .score span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.scoreboard .team {
+    flex-grow: 2;
+    font-size: 200%;
+    text-align: center;
+}
+
+.scoreboard .messages {
+    overflow: auto;
+}
+
+.scoreboard .messages p {
+    margin: 10px;
+}
