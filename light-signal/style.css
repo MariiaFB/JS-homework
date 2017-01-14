@@ -1,0 +1,41 @@
+.container {
+    width: 130px;
+    height: 390px;
+    padding: 5px;
+    margin-left: 45%;
+    /*background: grey;*/
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    align-content: center;
+    margin: 5px;
+}
+
+#redOff {
+    background: rosybrown;
+}
+
+#redOn {
+    background: red;
+}
+
+#yellowOff {
+    background: #ffff7f;
+}
+
+#yellowOn {
+    background: yellow;
+}
+
+#greenOff {
+    background: lightgreen;
+}
+
+#greenOn {
+    background:green;
+}
