@@ -1,0 +1,42 @@
+.field0 {
+    background-color:  green;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: 1px dashed springgreen;
+    box-sizing: border-box;
+}
+
+.field1 {
+    background-color:  red;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: 1px dashed springgreen;
+    box-sizing: border-box;
+}
+.field2 {
+    background-color:  gray;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: 1px dashed springgreen;
+    box-sizing: border-box;
+}
+
+.containerMap{
+    float: left;
+    margin: 10px;
+    width: 400px;
+}
+
+.playerName{
+    width: 100%;
+    background-color: lightgreen;
+    color: darkolivegreen;
+    padding: 15px -5px 15px 15px;
+}
+
+#gameFields {
+width: 1000px;
+}
